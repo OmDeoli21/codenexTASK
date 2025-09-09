@@ -1,8 +1,6 @@
 marks = []
-
 print(" Welcome to the Student Grade Calculator")
 print("Please enter marks for 5 subjects (between 0 and 100).")
-
 for i in range(1, 6):
     while True:  
         try:
@@ -14,10 +12,8 @@ for i in range(1, 6):
                 print("❌ Marks should be between 0 and 100. Try again.")
         except ValueError:
             print("⚠️ Invalid input! Please enter a number.")
-
 total = sum(marks)
 average = total / len(marks)
-
 if average >= 90:
     grade = "A"
 elif average >= 75:
@@ -31,3 +27,4 @@ print(f"Total Marks   : {total}")
 print(f"Average Marks : {average:.2f}")
 print(f"Grade         : {grade}")
 print("Thank you for using the Grade Calculator! ☺️ ")
+
